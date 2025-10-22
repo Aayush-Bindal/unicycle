@@ -146,7 +146,7 @@ Contributions are welcome!
 Submit issues, ideas, or pull requests — every improvement helps students trade smarter 🎓
 
 ```bash
-git clone https://github.com/aayush-bindal/Unicycle.git
+git clone https://github.com/aayush-bindal/unicycle.git
 ```
 
 ---
