@@ -27,7 +27,7 @@ Think **OLX meets Hostel Life** — fast, simple, and made for the *campus hustl
 
 | Layer | Technology |
 |-------|-------------|
-| Frontend | **Next.js 15 (App Router)** + Tailwind CSS + PWA |
+| Frontend | **Next.js 16 (App Router)** + Tailwind CSS + PWA |
 | Backend | **Supabase** (Auth · DB · Storage · Realtime) |
 | Database | **PostgreSQL (managed by Supabase)** |
 | Auth | **Google OAuth (@thapar.edu restricted)** |
