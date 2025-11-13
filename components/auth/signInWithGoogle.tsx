@@ -8,7 +8,7 @@ export default function SignInWithGoogle() {
 
   return (
     <button
-      onClick={() => { handleSignIn }}
+      onClick={() => { handleSignIn() }}
       className="relative flex items-center justify-center gap-3 w-full max-w-xs py-3 rounded-xl 
                  backdrop-blur-md bg-white/5 hover:bg-white/10 border border-white/20 
                  text-white font-medium transition-all duration-300 shadow-lg
