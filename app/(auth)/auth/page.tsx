@@ -25,7 +25,7 @@ const page = () => {
             alt="UNICYCLE"
             width={600}
             height={700}
-            className="drop-shadow-lg opacity-85 w-[70vw] md:w-[400px] lg:w-[500px] h-auto max-w-none md:max-w-[600px]"
+            className="drop-shadow-lg opacity-80 w-[70vw] md:w-[400px] lg:w-[500px] h-auto max-w-none md:max-w-[600px]"
           />
         </div>
 
