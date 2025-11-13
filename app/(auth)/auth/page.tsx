@@ -31,7 +31,7 @@ const page = () => {
         </div>
 
         {/* === Google Button (lower on screen, around 65%) === */}
-        <div className="absolute top-[65%] left-1/2 -translate-x-1/2 text-center justify-center">
+        <div className="absolute top-[65%] left-1/2 -translate-x-1/2 text-center flex flex-col justify-center">
           <SignInWithGoogle />
 
           {/* Info text under button */}
