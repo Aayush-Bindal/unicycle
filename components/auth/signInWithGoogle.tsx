@@ -8,33 +8,37 @@ export default function SignInWithGoogle() {
 
   return (
     <button
-      onClick={handleSignIn}
-      className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors duration-200"
+      onClick={() => { handleSignIn }}
+      className="relative flex items-center justify-center gap-3 w-full max-w-xs py-3 rounded-xl 
+                 backdrop-blur-md bg-white/5 hover:bg-white/10 border border-white/20 
+                 text-white font-medium transition-all duration-300 shadow-lg
+                 hover:shadow-white/10 active:scale-95"
     >
+      {/* Google icon */}
       <svg
+        className="w-5 h-5"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
-        width="22px"
-        height="22px"
       >
         <path
-          fill="#FFC107"
-          d="M43.611 20.083h-1.961V20H24v8h11.303c-1.65 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.841 1.154 7.961 3.039l5.657-5.657C34.015 6.27 29.268 4 24 4 12.954 4 4 12.954 4 24s8.954 20 20 20c11.046 0 20-8.954 20-20 0-1.341-.138-2.651-.389-3.917z"
+          fill="#EA4335"
+          d="M24 9.5c3.54 0 6.69 1.22 9.18 3.6l6.83-6.83C35.59 2.24 30.23 0 24 0 14.7 0 6.68 5.43 2.69 13.36l7.98 6.2C12.36 13.15 17.69 9.5 24 9.5z"
         />
         <path
-          fill="#FF3D00"
-          d="M6.306 14.691l6.571 4.819C14.297 15.108 18.74 12 24 12c3.059 0 5.841 1.154 7.961 3.039l5.657-5.657C34.015 6.27 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"
+          fill="#34A853"
+          d="M46.14 24.5c0-1.64-.15-3.22-.43-4.75H24v9.04h12.46c-.54 2.9-2.18 5.36-4.65 7.04l7.25 5.64c4.24-3.9 6.69-9.64 6.69-16.97z"
         />
         <path
-          fill="#4CAF50"
-          d="M24 44c5.159 0 9.832-1.977 13.385-5.188l-6.172-5.238C29.107 35.091 26.668 36 24 36c-5.202 0-9.611-3.315-11.283-7.946l-6.561 5.045C9.46 39.556 16.13 44 24 44z"
+          fill="#4A90E2"
+          d="M9.81 28.56A14.5 14.5 0 0 1 9.5 24c0-1.56.27-3.07.75-4.47l-7.98-6.2A23.96 23.96 0 0 0 0 24c0 3.9.93 7.57 2.58 10.83l8.02-6.27z"
         />
         <path
-          fill="#1976D2"
-          d="M43.611 20.083h-1.961V20H24v8h11.303c-.792 2.237-2.244 4.166-4.09 5.574.001-.001 6.172 5.238 6.172 5.238l.002.001C40.482 34.186 44 29.06 44 24c0-1.341-.138-2.651-.389-3.917z"
+          fill="#FBBC05"
+          d="M24 48c6.23 0 11.48-2.05 15.3-5.56l-7.25-5.64c-2.01 1.36-4.59 2.2-8.05 2.2-6.31 0-11.64-3.65-13.83-8.93l-8.02 6.27C6.68 42.57 14.7 48 24 48z"
         />
       </svg>
-      Sign in with Google
+
+      Continue with Google
     </button>
   )
 }
