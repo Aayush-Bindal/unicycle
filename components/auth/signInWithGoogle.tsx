@@ -1,18 +1,17 @@
-'use client'
+"use client";
 
 export default function SignInWithGoogle() {
   const handleSignIn = () => {
     // This hits your /auth route (which starts Google OAuth)
-    window.location.href = '/auth/start'
-  }
+    window.location.href = "/auth/start";
+  };
 
   return (
     <button
-      onClick={() => { handleSignIn() }}
-      className="relative flex items-center justify-center gap-3 py-2.5 rounded-xl 
-             backdrop-blur-md bg-white/5 hover:bg-white/10 border border-white/20 
-             text-white font-medium transition-all duration-300 shadow-lg
-             hover:shadow-white/10 active:scale-95 whitespace-nowrap px-3"
+      onClick={() => {
+        handleSignIn();
+      }}
+      className="relative flex items-center justify-center gap-3 py-2.5 rounded-xl backdrop-blur-md bg-white/5 hover:bg-white/10 border border-white/20 text-white font-medium transition-all duration-300 shadow-lg hover:shadow-white/10 active:scale-95 whitespace-nowrap px-3"
     >
       {/* Google icon */}
       <svg
@@ -37,8 +36,7 @@ export default function SignInWithGoogle() {
           d="M24 48c6.23 0 11.48-2.05 15.3-5.56l-7.25-5.64c-2.01 1.36-4.59 2.2-8.05 2.2-6.31 0-11.64-3.65-13.83-8.93l-8.02 6.27C6.68 42.57 14.7 48 24 48z"
         />
       </svg>
-
       Continue with Google
     </button>
-  )
+  );
 }
