@@ -3,8 +3,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-
-      <main className="relative h-screen w-full flex items-center justify-center overflow-hidden text-white">
+    <main className="relative h-screen w-full flex items-center justify-center overflow-hidden text-white">
       {/* Background video */}
       <video
         src="/auth-bg.mp4"
@@ -17,17 +16,17 @@ const page = () => {
       <div className="absolute inset-0 bg-black/80" />
 
       {/* Content */}
-        <div className="relative z-10 h-full w-full flex flex-col items-center justify-center text-center">
+      <div className="relative z-10 h-full w-full flex flex-col items-center justify-center text-center">
         {/* === Logo / Heading (top 40%) === */}
         <div className="absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center">
           {/* Replace heading with your logo */}
           <Image
-  src="/images/logo.png"
-  alt="UNICYCLE"
-  width={600}
-  height={700}
-  className="drop-shadow-lg opacity-85 w-[70vw] md:w-[400px] lg:w-[500px] h-auto max-w-none md:max-w-[600px]"
-/>
+            src="/images/logo.png"
+            alt="UNICYCLE"
+            width={600}
+            height={700}
+            className="drop-shadow-lg opacity-85 w-[70vw] md:w-[400px] lg:w-[500px] h-auto max-w-none md:max-w-[600px]"
+          />
         </div>
 
         {/* === Google Button (lower on screen, around 65%) === */}
@@ -62,7 +61,7 @@ const page = () => {
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default page
+export default page;
