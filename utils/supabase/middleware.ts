@@ -3,6 +3,29 @@ import { NextResponse, type NextRequest } from 'next/server'
 import { checkUserExistsById } from '@/lib/user'
 
 export async function updateSession(request: NextRequest) {
+
+  // check if request is for public folder
+  const { pathname } = request.nextUrl
+
+  const isStaticAsset =
+    pathname.startsWith('/_next') ||
+    pathname === '/favicon.ico' ||
+    pathname.startsWith('/images') ||
+    pathname.startsWith('/videos') ||
+    pathname.endsWith('.mp4') ||
+    pathname.endsWith('.webm') ||
+    pathname.endsWith('.jpg') ||
+    pathname.endsWith('.jpeg') ||
+    pathname.endsWith('.png') ||
+    pathname.endsWith('.svg') ||
+    pathname.endsWith('.css') ||
+    pathname.endsWith('.js')
+
+  if (isStaticAsset) {
+    return NextResponse.next()  // ← STOP middleware here
+  }
+
+
   let supabaseResponse = NextResponse.next({
     request,
   })
