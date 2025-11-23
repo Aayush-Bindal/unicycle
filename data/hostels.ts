@@ -4,6 +4,7 @@ export const hostels = [
   { label: "Amritam Hall", value: "amritam-hall" },
   { label: "Ananta Hall", value: "ananta-hall" },
   { label: "Anantam Hall", value: "anantam-hall" },
+  { label: "Day Scholar", value: "day-scholar" },
   { label: "Dhriti Hall", value: "dhriti-hall" },
   { label: "Hostel-FRF/G", value: "hostel-frf-g" },
   { label: "Ira Hall", value: "ira-hall" },
