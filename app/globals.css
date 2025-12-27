@@ -1,5 +1,34 @@
 @import "tailwindcss";
 @plugin '../utils/hero.ts';
-/* Note: You may need to change the path to fit your project structure */
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
+
+@layer utilities {
+    /* 1. Base Glass Panel (Static) */
+    .glass-panel {
+        @apply bg-white/3 
+            backdrop-blur-xl 
+            backdrop-saturate-150 
+            border border-white/10 
+            shadow-[0_8px_32px_0_rgba(0,0,0,0.36)];
+    }
+
+    /* 2. Interactive Glass (Hover/Focus states) */
+    .glass-interactive {
+            @apply bg-white/3
+            backdrop-blur-xl 
+            backdrop-saturate-150 
+            border border-white/10 
+            shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]
+            
+            /* Interactive specific styles */
+            cursor-pointer
+            transition-all duration-300 
+            hover:bg-white/10 
+            hover:border-white/20 
+            hover:shadow-white/5
+            focus:bg-white/10 
+            focus:border-white/30 
+            active:scale-[0.98];
+    }
+}
