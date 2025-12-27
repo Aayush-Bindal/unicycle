@@ -11,7 +11,7 @@ export default function SignInWithGoogle() {
       onClick={() => {
         handleSignIn();
       }}
-      className="relative flex items-center justify-center gap-3 py-2.5 rounded-xl backdrop-blur-md bg-white/5 hover:bg-white/10 border border-white/20 text-white font-medium transition-all duration-300 shadow-lg hover:shadow-white/10 active:scale-95 whitespace-nowrap px-3"
+      className="glass-interactive relative flex items-center justify-center gap-3 py-2.5 px-3 rounded-xl text-white font-medium whitespace-nowrap"
     >
       {/* Google icon */}
       <svg

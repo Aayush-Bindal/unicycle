@@ -111,17 +111,11 @@ export default function OnboardingPage() {
   };
 
   // Glass Styles
-  const glassInputStyles = {
+const glassInputStyles = {
+    inputWrapper: "glass-interactive !cursor-text data-[hover=true]:bg-white/10 group-data-[focus=true]:bg-white/10",
     label: "text-white/50 group-data-[filled=true]:text-white/70",
-    input: ["bg-transparent", "text-white/90", "placeholder:text-white/30"],
+    input: "bg-transparent text-white/90 placeholder:text-white/30",
     innerWrapper: "bg-transparent",
-    inputWrapper: [
-      "bg-white/3",
-      "backdrop-blur-xl",
-      "backdrop-saturate-300",
-      "hover:bg-white/5",
-      "!cursor-text",
-    ],
   };
 
   // --- JSX Structure ---
