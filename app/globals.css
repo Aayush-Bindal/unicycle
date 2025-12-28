@@ -6,7 +6,7 @@
 @layer utilities {
     /* 1. Base Glass Panel (Static) */
     .glass-panel {
-        @apply bg-white/3 
+        @apply bg-white/5
             backdrop-blur-xl 
             backdrop-saturate-150 
             border border-white/10 
@@ -15,7 +15,7 @@
 
     /* 2. Interactive Glass (Hover/Focus states) */
     .glass-interactive {
-            @apply bg-white/3
+            @apply bg-white/5
             backdrop-blur-xl 
             backdrop-saturate-150 
             border border-white/10 
