@@ -23,6 +23,7 @@ import {
 } from "@heroui/react";
 import { Search, Filter, Heart, Building2, Globe, Plus } from "lucide-react";
 import { motion } from "framer-motion";
+import { signOutUser } from "../(auth)/logout";
 
 // --- MOCK DATA ---
 const CATEGORIES = ["All", "Cycles", "Books", "Electronics", "Furniture", "Lab Coats", "Gadgets"];
@@ -143,7 +144,7 @@ export default function MainPage() {
               </DropdownItem>
               <DropdownItem key="listings" className="text-white hover:bg-zinc-800">My Listings</DropdownItem>
               <DropdownItem key="listings" className="text-white hover:bg-zinc-800">My Requests</DropdownItem>
-              <DropdownItem key="logout" color="danger">Log Out</DropdownItem>
+              <DropdownItem key="logout" color="danger" onClick={signOutUser}>Log Out</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </NavbarContent>
